@@ -1,5 +1,12 @@
 # General
 alias r='clear'
+alias cls='clear'
+alias ll='ls -al'
+alias lh='ls -halt'
+alias hgi='history | grep -i'
+alias gi='grep -i'
+alias vbrc='vi ~/.bashrc'
+alias sbrc='source ~/.bashrc'
 
 # Git
 alias gs='git status'
