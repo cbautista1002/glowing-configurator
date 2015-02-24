@@ -15,3 +15,6 @@ alias gc='git commit'
 alias gp='git push origin master'
 alias gd='git diff'
 alias gi='git init'
+alias gb='git branch'
+alias gr='git remote -v'
+
