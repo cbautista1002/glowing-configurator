@@ -7,6 +7,7 @@ alias hgi='history | grep -i'
 alias gi='grep -i'
 alias vbrc='vi ~/.bashrc'
 alias sbrc='source ~/.bashrc'
+alias vi='vim'
 
 # Git
 alias gs='git status'
