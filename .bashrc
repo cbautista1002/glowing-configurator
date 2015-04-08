@@ -23,3 +23,10 @@ alias gfpu='git fetch --prune upstream'
 alias grum='git rebase upstream/master'
 alias grom='git rebase origin/master'
 alias gpf='git push -f'
+
+# Docker
+alias dc='docker-compose'
+alias dps='docker ps'
+alias di='docker images'
+alias de='docker exec -it'
+alias dpu='docker pull'
