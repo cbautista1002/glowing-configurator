@@ -23,6 +23,8 @@ alias gfpu='git fetch --prune upstream'
 alias grum='git rebase upstream/master'
 alias grom='git rebase origin/master'
 alias gpf='git push -f'
+alias guu='gfpu;grum'
+alias guo='gfpo;grom'
 
 # Docker
 alias dc='docker-compose'
