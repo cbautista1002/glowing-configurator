@@ -8,7 +8,7 @@ alias gi='grep -i'
 alias vbrc='vi ~/.bashrc'
 alias sbrc='source ~/.bashrc'
 alias vi='vim'
-alias fpg='find . -name \*.py | xargs grep '
+alias fpg='find . -name \*.py | xargs grep -in --colour '
 
 # Git
 alias gs='git status'
