@@ -8,6 +8,7 @@ alias gi='grep -i'
 alias vbrc='vi ~/.bashrc'
 alias sbrc='source ~/.bashrc'
 alias vi='vim'
+alias fpg='find . -name \*.py | xargs grep '
 
 # Git
 alias gs='git status'
@@ -40,11 +41,3 @@ alias dpu='docker pull'
 alias ds='docker stop'
 alias drm='docker rm'
 
-# MAP
-alias stopmap='supervisorctl stop map'
-alias startmap='supervisorctl start map'
-alias restartmap='supervisorctl restart map'
-alias rml='rm -fv /var/log/MAPServer.log'
-alias tml='tail -f /var/log/MAPServer.log'
-alias cleanmap="stopmap; rml; echo 'use map_db; DELETE FROM task_queue; UPDATE template_instance SET status=2'| mysql"
-alias launchmap='startmap; tml'
