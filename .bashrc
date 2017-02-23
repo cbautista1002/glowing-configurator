@@ -9,6 +9,9 @@ alias vbrc='vi ~/.bashrc'
 alias sbrc='source ~/.bashrc'
 alias vi='vim'
 alias fpg='find . -name \*.py | xargs grep -in --colour '
+alias fpgnt='find . -name "*.py" -not -path "*/tests/*" | xargs grep -in --colour'
+alias fgg='find . -name \*.go | xargs grep -in --colour '
+alias fggnt='find . -name "*.go" -not -path "*/tests/*" | xargs grep -in --colour'
 
 # Git
 alias gs='git status'
