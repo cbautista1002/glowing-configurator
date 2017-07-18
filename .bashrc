@@ -34,6 +34,8 @@ alias grod='git rebase origin/develop'
 alias gpf='git push -f'
 alias guu='gfpu;grum'
 alias guo='gfpo;grom'
+alias gst='git stash'
+alias gsta='git stash apply'
 
 # Docker
 alias dc='docker-compose'
