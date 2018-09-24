@@ -51,4 +51,11 @@ alias drst='docker rm -vf (docker ps -aq)'
 alias dpsf='docker ps --format "table {{.Names}} {{.Status}} {{.Ports}}"'
 alias drmi='docker rmi (docker images -q)'
 
+# Kubernetes
+alias k='kubectl'
+alias kdev='kubectl config use-context aws-dev'
+alias kstage='kubectl config use-context aws-stage'
+alias kprod='kubectl config use-context aws-prod'
+alias kcfg='kubectl config'
+
 #alias drst='docker rm -fv $(docker ps -aq) && docker run -d --restart=always -v /var/run/docker.sock:/tmp/docker.sock:ro -p 80:80 -p 443:443 -p 19322:19322/udp -e DNS_IP=127.0.0.1 -e CONTAINER_NAME=http-proxy --name http-proxy codekitchen/dinghy-http-proxy && dps -a'
