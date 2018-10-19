@@ -53,7 +53,6 @@ alias drmi='docker rmi (docker images -q)'
 
 # Kubernetes
 alias k='kubectl'
-alias kdev='kubectl config use-context aws-dev'
 alias kstage='kubectl config use-context aws-stage'
 alias kprod='kubectl config use-context aws-prod'
 alias kcfg='kubectl config'
