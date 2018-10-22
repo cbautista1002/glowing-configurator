@@ -59,5 +59,8 @@ alias kcfg='kubectl config'
 alias kps='kubectl get pods -n staging'
 alias kpd='kubectl get pods -n dev'
 alias kp='kubectl get pods'
+alias kls='kubectl logs -n staging'
+alias kld='kubectl logs -n dev'
+alias kl='kubectl logs'
 
 alias drst='docker rm -fv (docker ps -aq); and docker run -d --restart=always -v /var/run/docker.sock:/tmp/docker.sock:ro -p 80:80 -p 443:443 -p 19322:19322/udp -e DNS_IP=127.0.0.1 -e CONTAINER_NAME=http-proxy --name http-proxy codekitchen/dinghy-http-proxy; and dps -a'
