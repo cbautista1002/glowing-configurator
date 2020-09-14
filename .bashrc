@@ -105,3 +105,8 @@ alias clear_postman='rm -rf ~/Library/Application\ Support/Postman'
 
 alias generate_quote_pdf='docker-compose run --no-deps gutenberg pytest tests/scripts/test_generate_sample_pdf.py::test_generate_quote_document_for_state --disable-warnings --capture=no --save-sample-pdf'
 alias generate_policy_pdf='docker-compose run --no-deps gutenberg pytest tests/scripts/test_generate_sample_pdf.py::test_generate_policy_document_for_state --disable-warnings --capture=no --save-sample-pdf'
+
+# Make keyboard keys faster
+# defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+# defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
