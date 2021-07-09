@@ -58,9 +58,9 @@ alias kp='kubectl get pods'
 alias ke='kubectl exec -it'
 alias kl='kubectl logs'
 alias kcfg='kubectl config'
-alias kprod='kubectx prod-eks-cluster; and kubens prod'
-alias kstage='kubectx stage-eks-cluster; and kubens staging'
-alias ksandbox='kubectx sandbox-eks-cluster; and kubens sandbox'
+alias kprod='kubectx prod; and kubens prod'
+alias kstaging='kubectx staging; and kubens staging'
+alias ksandbox='kubectx sandbox; and kubens sandbox'
 alias koldstage='kubectx aws-stage; and kubens staging'
 alias kdev='kubectx aws-stage; and kubens dev'
 alias kdemo='kubectx aws-stage; and kubens demo'
@@ -68,6 +68,8 @@ alias koff='kube_ps off'
 alias kon='kube_ps on'
 alias kpx='kubectl proxy'
 alias kgv="kubectl get deploy -o wide | awk '{print $7}' | cut -d '/' -f2- | uniq"
+alias kdp="k describe pod"
+
 #alias kstage='kubectl config use-context aws-stage'
 #alias kprod='kubectl config use-context aws-prod'
 #alias ksp='kstage; and k proxy'
@@ -81,21 +83,6 @@ alias kgv="kubectl get deploy -o wide | awk '{print $7}' | cut -d '/' -f2- | uni
 
 # Helm
 alias h='helm'
-alias hsvsandbox='z devops; and helm secrets view helm/charts/shared-settings/vars/sandbox/secrets.yaml'
-alias hsvstage='z devops; and helm secrets view helm/charts/shared-settings/vars/staging/secrets.yaml'
-alias hsvprod='z devops; and helm secrets view helm/charts/shared-settings/vars/prod/secrets.yaml'
-
-alias hsvprodeverett='z ever; and helm secrets view helm/everett/vars/prod/secrets.yaml'
-alias hsvsandboxeverett='z ever; and helm secrets view helm/everett/vars/sandbox/secrets.yaml'
-alias hsvstageeverett='z ever; and helm secrets view helm/everett/vars/staging/secrets.yaml'
-
-alias hsvprodquoting='z quot; and helm secrets view helm/quoting/vars/prod/secrets.yaml'
-alias hsvsandboxquoting='z quot; and helm secrets view helm/quoting/vars/sandbox/secrets.yaml'
-alias hsvstagequoting='z quot; and helm secrets view helm/quoting/vars/staging/secrets.yaml'
-
-alias hsvsandboxkong='z devops; and helm secrets view helm/charts/kongfig/vars/sandbox/secrets.yaml'
-alias hsvstagekong='z devops; and helm secrets view helm/charts/kongfig/vars/staging/secrets.yaml'
-alias hsvprodkong='z devops; and helm secrets view helm/charts/kongfig/vars/prod/secrets.yaml'
 
 # Random
 alias loaddata='cd ~/code/boost-platform/everett; and docker exec -it (docker ps --format "{{.Names}}" | grep -i everett) python manage.py loaddata everett/fixtures/*json; and cd -'
