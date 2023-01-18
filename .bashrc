@@ -58,9 +58,12 @@ alias kp='kubectl get pods'
 alias ke='kubectl exec -it'
 alias kl='kubectl logs'
 alias kcfg='kubectl config'
-alias kprod='kubectx prod; and kubens prod'
-alias kstaging='kubectx staging; and kubens staging'
-alias ksandbox='kubectx sandbox; and kubens sandbox'
+# alias kstaging='kubectx staging; and kubens staging'
+# alias ksandbox='kubectx sandbox; and kubens sandbox'
+# alias kprod='kubectx prod; and kubens prod'
+alias kstaging='tsh kube login stage-eks-cluster'
+alias ksandbox='tsh kube login sandbox-eks-cluster'
+alias kprod='tsh kube login prod-eks-cluster'
 alias koldstage='kubectx aws-stage; and kubens staging'
 alias kdev='kubectx aws-stage; and kubens dev'
 alias kdemo='kubectx aws-stage; and kubens demo'
@@ -69,6 +72,9 @@ alias kon='kube_ps on'
 alias kpx='kubectl proxy'
 alias kgv="kubectl get deploy -o wide | awk '{print $7}' | cut -d '/' -f2- | uniq"
 alias kdp="k describe pod"
+
+# Teleport
+alias tshl='tsh login --proxy=boost.teleport.sh:443 --auth=google --user='
 
 #alias kstage='kubectl config use-context aws-stage'
 #alias kprod='kubectl config use-context aws-prod'
